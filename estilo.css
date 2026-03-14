@@ -89,7 +89,7 @@ footer p {
     margin: 5px;
 }
 
-/* Adicionando um laço decorativo no canto superior direito (opcional) */
+/* Adicionando um laço decorativo no canto superior direito  */
 body::before {
     content: "🎀";
     font-size: 4rem;
