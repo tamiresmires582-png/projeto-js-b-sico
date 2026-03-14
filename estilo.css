@@ -1,9 +1,12 @@
  /* Importando fonte fofa do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
+/* ===== ESTILO SIMPLES - TEMA ROSA ===== */
+
+/* Corpo da página */
 body {
-    background: linear-gradient(145deg, #ffb6c1 0%, #ff9eb5 100%); /* gradiente rosa */
-    font: normal 16pt 'Fredoka', sans-serif; /* fonte mais fofa */
+    background: #ffc0cb; /* rosa claro */
+    font-family: Arial, sans-serif; /* fonte simples */
     min-height: 100vh;
     margin: 0;
     display: flex;
@@ -12,10 +15,10 @@ body {
     justify-content: center;
 }
 
+/* Cabeçalho */
 header {
     color: white;
     text-align: center;
-    text-shadow: 3px 3px 0 #d44a7a; /* sombra mais delicada */
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -23,29 +26,32 @@ header {
     gap: 10px;
 }
 
+/* Ícone da Hello Kitty (se houver) */
 header .icone {
     width: 50px;
     height: auto;
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
 }
 
+/* Título principal */
 header h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 3rem; /* tamanho grande */
+    text-shadow: 2px 2px 0 #d44a7a; /* sombra rosa */
 }
 
+/* Seção principal (card branco) */
 section {
-    background: rgba(255, 255, 255, 0.9); /* leve transparência */
-    border-radius: 30px; /* bordas mais arredondadas */
+    background: white;
+    border-radius: 30px;
     padding: 30px;
     width: 90%;
     max-width: 550px;
     margin: 20px auto;
-    box-shadow: 0 10px 20px rgba(212, 74, 122, 0.4), 0 0 0 5px #ffc0cb inset; /* brilho interno rosa */
-    backdrop-filter: blur(2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* sombra suave */
     border: 2px solid white;
 }
 
+/* Mensagem (hora) */
 #msg {
     font-size: 2rem;
     color: #b3446c;
@@ -54,56 +60,34 @@ section {
     background: #ffe4ec;
     padding: 15px;
     border-radius: 50px;
-    box-shadow: 0 5px 0 #d47a9a;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-weight: bold;
 }
 
+/* Container da imagem */
 #img {
     text-align: center;
 }
 
+/* Estilo da imagem */
 #img img {
     max-width: 100%;
     max-height: 300px;
-    border-radius: 50%; /* imagem redonda */
-    border: 6px solid white;
-    box-shadow: 0 8px 0 #d44a7a, 0 12px 20px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
+    border-radius: 50%; /* deixa a imagem redonda */
+    border: 5px solid white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2); /* sombra simples */
 }
 
-#img img:hover {
-    transform: scale(1.02); /* efeito de crescimento ao passar o mouse */
-}
-
+/* Rodapé */
 footer {
     color: white;
     text-align: center;
     font-style: italic;
-    text-shadow: 2px 2px 0 #b3446c;
     margin-top: 20px;
     font-size: 1.2rem;
+    text-shadow: 1px 1px 0 #b3446c;
 }
 
+/* Parágrafos do rodapé */
 footer p {
     margin: 5px;
-}
-
-/* Adicionando um laço decorativo no canto superior direito  */
-body::before {
-    content: "🎀";
-    font-size: 4rem;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    opacity: 0.6;
-    transform: rotate(15deg);
-    pointer-events: none;
-}
-
-/* Moldura fofa ao redor da seção */
-section {
-    outline: 3px dotted #eb1b83;
-    outline-offset: 8px;
-    box-shadow: 0 0 0 5px white, 0 0 0 10px #ffb6c1;
 }
