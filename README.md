@@ -1,5 +1,5 @@
 # 🕒 Projeto Hora do Dia
-
+![Demonstração do Projeto](Captura%20de%20tela%202026-04-22%20180104.png)
 Este é um projeto interativo desenvolvido para praticar a manipulação de elementos **DOM** com JavaScript puro. O site identifica o horário atual do sistema e altera dinamicamente a imagem e a cor de fundo.
 
 ## 🚀 Tecnologias Utilizadas
