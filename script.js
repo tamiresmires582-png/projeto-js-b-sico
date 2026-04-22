@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Primeira execução para mostrar os dados logo ao abrir
     atualizarHoraEImagem();
 
-    // Configura um intervalo para executar a função a cada 1 segundo (1000 ms)
+    // Configura um intervalo para executar a função a cada 1 segundo 
     setInterval(atualizarHoraEImagem, 1000);
 });
 
