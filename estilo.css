@@ -13,7 +13,7 @@
 
 /* Corpo da página */
 body {
-    background-color: #ffc0cb; /* Rosa claro*/
+    background-color: #ffc0cb; 
     font-family: 'Fredoka', Arial, sans-serif; 
     min-height: 100vh;
     display: flex;
@@ -23,7 +23,7 @@ body {
     padding: 20px;
 }
 
-/* Área Principal */
+
 main {
     width: 100%;
     display: flex;
@@ -35,13 +35,15 @@ header {
     color: white;
     text-align: center;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 /* Título principal */
 header h1 {
     font-size: 2.5rem; 
     font-weight: 600;
-    text-shadow: 2px 2px 0px #d44a7a; /* Sombra rosa escura marcante */
+    text-shadow: 2px 2px 0px #d44a7a; 
+    white-space: nowrap; 
 }
 
 /* Seção principal (Card Branco) */
@@ -65,13 +67,13 @@ section {
     color: #b3446c;
     text-align: center;
     margin-bottom: 25px;
-    background-color: #ffe4ec; /* Fundo pílula rosa bem clarinho */
+    background-color: #ffe4ec; 
     padding: 12px 20px;
     border-radius: 50px;
     font-weight: 700;
 }
 
-
+/* Container da imagem */
 #img {
     width: 100%;
     display: flex;
@@ -82,7 +84,7 @@ section {
 
 #img img {
     width: 260px;          
-    height: 260px;        
+    height: 260px;         
     object-fit: cover;     
     border-radius: 50%;    
     border: 6px solid #ffffff;
@@ -104,16 +106,25 @@ footer p {
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
     header h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem; 
     }
     #msg {
         font-size: 1.4rem;
     }
     #img img {
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
     }
 }
 
+@media (max-width: 360px) {
+    header h1 {
+        font-size: 1.3rem; 
+    }
+    #img img {
+        width: 180px;
+        height: 180px;
+    }
+}
